@@ -59,7 +59,7 @@ Lightweight, simple TUI music player written in c++. Based on [cmus](https://cmu
    ```
 6. enjoy
 
-othrwise install deps and build yourself:
+otherwise install deps and build yourself:
 >ncurses
 >
 >SDL

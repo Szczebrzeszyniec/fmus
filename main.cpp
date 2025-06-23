@@ -172,7 +172,7 @@ bool settings_menu(){
             "Save & Return",
             "Quit",
             "Github (with manual): github.com/Szczebrzeszyniec/fmus",
-            "Website: firepo.edu.pl/fmus"
+            "Website: firepro.edu.pl/fmus"
         };
     };
     refresh_opts();
@@ -232,7 +232,7 @@ bool settings_menu(){
             break;
         }
         case 10: {
-            const char* url = "https://firepo.edu.pl/fmus";
+            const char* url = "https://firepro.edu.pl/fmus";
             std::string cmd = std::string("xdg-open \"") + url + "\" &";
             system(cmd.c_str());
             break;
