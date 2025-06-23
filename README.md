@@ -1,17 +1,72 @@
-firemusic player
-written in c++
+# FireMusic player (fmus)
 
-how to install:
-(script supports debian, RHEL/fedora, arch and nixos)
+Lightweight, simple TUI music player written in c++. Based on [cmus](https://cmus.github.io/) and [Rockbox](https://cmus.github.io/).
+
+### Features include and are limited to:
+
+>playing music organized into directories
+>
+>navigating through directories
+>
+>skiping tracks
+>
+>shuffling and looping
+>
+>and not much more
+
+## Controls:
+   >escape - settings menu
+
+   >z/x - track skip
+
+   >space - play/pause
+
+   >-/+ || scroll up/down - volume
+
+   >arrow left/right - seek
+
+   >arrow up/down - navigate
+
+   >enter - select/play
+
+   >shift +
+   >
+   >z/x - skip to start/end of playlist
+   >
+   >-/+ - lower incriments
+   >
+   >arrow left/right - higher incriments
+   
+
+## how to install:
+> [!IMPORTANT]
+> (script supports Debian and derivatives, RHEL/fedora, Arch and NixOS)
+> 
+> (only tested on arch btw)
 
 1. clone repo:
+   ```
    $ git clone https://github.com/Szczebrzeszyniec/fmus.git
+   ```
+3. cd into fmus directory:
+   ```
+   $ cd fmus
+   ```
    
-2. cd into fmus directory
-   
-3. run script as root:
+5. run script as root:
+   ```
    $ sudo bash installer.sh
-   
-4. enjoy
+   ```
+6. enjoy
 
-othrwise install deps and build yourself
+othrwise install deps and build yourself:
+>ncurses
+>
+>SDL
+>
+>SDL_mixer
+
+and build (example, probably will work though):
+   ```
+   $ g++ main.cpp -std=c++17 -o fmus   `pkg-config --cflags --libs sdl2 SDL2_mixer ncurses`   -pthread
+   ```
