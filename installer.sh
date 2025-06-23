@@ -110,7 +110,7 @@ chmod +x fmus
 echo "Installed 'fmus' executable."
 
 echo "Copying to /usr/local/bin..."
-sudo cp fmus /usr/local/bin/
+sudo cp fmus /usr/bin/
 echo "Done."
 
 echo
