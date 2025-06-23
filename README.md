@@ -1,6 +1,6 @@
 # FireMusic player (fmus)
 
-Lightweight, simple TUI music player written in c++. Based on [cmus](https://cmus.github.io/) and [Rockbox](https://cmus.github.io/).
+Lightweight, simple TUI music player written in c++. Based on [cmus](https://cmus.github.io/) and [Rockbox](https://rockbox.org).
 
 ### Features include and are limited to:
 
