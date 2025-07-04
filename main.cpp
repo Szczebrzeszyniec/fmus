@@ -240,7 +240,7 @@ bool settings_menu(){
         }
         refresh_opts();
     }
-    else if (ch == 27) {  // esc
+    else if (ch == 9) {  // esc
         save_settings();
         return false;
     }
@@ -473,7 +473,7 @@ int main(){
         MEVENT me;
 
         // dzk za nic gpt ssasz pałe huja dało
-if (!cmd && c == 27) {
+if (!cmd && c == 9) {
     timeout(-1);
 
     if (settings_menu())
@@ -519,7 +519,7 @@ if (!cmd && c == 27) {
 
         // volume wheel
         if (c==KEY_MOUSE && getmouse(&me)==OK) {
-            if (me.bstate & BUTTON4_PRESSED) volume=min(200,volume+5);
+            if (me.bstate & BUTTON4_PRESSED) volume=min(100,volume+5);
             if (me.bstate & BUTTON5_PRESSED) volume=max(0,volume-5);
             Mix_VolumeMusic(volume*MIX_MAX_VOLUME/100);
             settings.last_volume = volume;
