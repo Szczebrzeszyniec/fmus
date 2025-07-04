@@ -15,7 +15,7 @@ Lightweight, simple TUI music player written in c++. Based on [cmus](https://cmu
 >and not much more
 
 ## Controls:
-   >escape - settings menu
+   >tab - settings menu
 
    >z/x - track skip
 
