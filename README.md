@@ -21,6 +21,10 @@ Lightweight, simple TUI music player written in c++. Based on [cmus](https://cmu
 
    >space - play/pause
 
+   >s - toggle shuffle
+
+   >r - toggle repeat
+
    >-/+ || scroll up/down - volume
 
    >arrow left/right - seek
